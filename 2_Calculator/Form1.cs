@@ -16,5 +16,45 @@ namespace _2_Calculator
         {
             InitializeComponent();
         }
+
+        private void AddButton_Click(object sender, EventArgs e)
+        {
+            int num1 = int.Parse(textBox1.Text);
+            int num2 = int.Parse(textBox2.Text);
+
+            int result = num1 + num2;
+
+            MessageBox.Show("Wynik dodawania: " + result.ToString());
+        }
+
+        private void SubtractButton_Click(object sender, EventArgs e)
+        {
+            int num1 = int.Parse(textBox1.Text);
+            int num2 = int.Parse(textBox2.Text);
+
+            int result = num1 - num2;
+
+            MessageBox.Show("Wynik odejmowania: " + result.ToString());
+        }
+
+        private void MultipleButton_Click(object sender, EventArgs e)
+        {
+            int num1 = int.Parse(textBox1.Text);
+            int num2 = int.Parse(textBox2.Text);
+
+            int result = num1 * num2;
+
+            MessageBox.Show("Wynik mnożenia: " + result.ToString());
+        }
+
+        private void DivisionButton_Click(object sender, EventArgs e)
+        {
+            int num1 = int.Parse(textBox1.Text);
+            int num2 = int.Parse(textBox2.Text);
+
+            int result = num1 / num2;
+
+            MessageBox.Show("Wynik dzielenia: " + result.ToString());
+        }
     }
 }
